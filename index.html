@@ -1091,11 +1091,19 @@
     <div class="card" style="margin-bottom:12px">
       <div class="card-title">VAN – Valor Actual Neto</div>
       <p>Calcula el valor presente de los flujos de caja futuros, descontando el valor del dinero en el tiempo. Un <strong>VAN &gt; 0</strong> indica que el proyecto es aceptable y genera valor adicional.</p>
+      <div class="formula">VAN = &minus;I₀ + &sum; [ FCₜ / (1 + r)ᵗ ]</div>
+      <p style="font-size:13px; color:var(--muted); margin-top:8px">
+        <strong style="color:var(--muted)">Donde:</strong> I₀ = inversión inicial · FCₜ = flujo de caja en el período t · r = tasa de descuento · t = período (1, 2, … n)
+      </p>
     </div>
 
     <div class="card">
       <div class="card-title">TIR – Tasa Interna de Retorno</div>
       <p>La tasa de rentabilidad que genera el proyecto. Si la <strong>TIR &gt; tasa de retorno exigida</strong> por la empresa, el proyecto es atractivo.</p>
+      <div class="formula">0 = &minus;I₀ + &sum; [ FCₜ / (1 + TIR)ᵗ ]</div>
+      <p style="font-size:13px; color:var(--muted); margin-top:8px">
+        <strong style="color:var(--muted)">Interpretación:</strong> Es la tasa <em>r</em> que hace que el VAN sea igual a cero. Se obtiene por iteración/calculadora financiera. Si TIR &gt; tasa mínima exigida → proyecto viable.
+      </p>
     </div>
 
     <div class="highlight blue" style="margin-top:24px">
